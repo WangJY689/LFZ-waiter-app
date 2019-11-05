@@ -65,8 +65,8 @@
                     </van-row>
                     <div slot="footer">
                       <van-row v-if="o.status==='待接单'" >  
-                      <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="jujue(o.id)">拒绝</van-button>
-                      <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="jieshou(o.id)">接收</van-button>
+                      <van-button size="small" color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="jujue(o.id)" style="margin-riht:3em" >拒绝</van-button>
+                      <van-button size="small" color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="jieshou(o.id)">接收</van-button>
                     </van-row>
                     </div>
                 </van-panel>
@@ -133,7 +133,7 @@
                     </van-row>
                     <div slot="footer">
                       <van-row v-if="o.status==='待确认'" >  
-                        <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="wancheng(o.id)">完成</van-button>
+                        <van-button size="small" color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="wancheng(o.id)">完成</van-button>
                     </van-row>
                     </div>
                 </van-panel>

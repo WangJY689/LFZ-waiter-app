@@ -4,44 +4,13 @@
     <div class="heade">
      <van-swipe :autoplay="3000" indicator-color="white" class="lunbo">
         <van-swipe-item><img src="../../assets/image/1.jpg" width="100%" height="220px"></van-swipe-item>
-        <van-swipe-item><img src="../../assets/image/4.jpg" width="100%" height="220px"></van-swipe-item>
+        <van-swipe-item><img src="../../assets/image/2.jpg" width="100%" height="220px"></van-swipe-item>
         <van-swipe-item><img src="../../assets/image/3.jpg" width="100%" height="220px"></van-swipe-item>
         <van-swipe-item><img src="../../assets/image/4.jpg" width="100%" height="220px"></van-swipe-item>
      </van-swipe>
     </div>
     <div class="body">
-        <table>
-            <tbody>
-            <tr>
-                <td>
-                     <van-icon name="friends-o" size="40px"/>
-                    <p>专业保洁</p>
-                </td>
-                <td>
-                     <van-icon name="friends-o" size="40px"/>
-                    <p>家居养护</p>
-                </td>
-                <td>
-                     <van-icon name="friends-o" size="40px"/>
-                    <p>家庭维修</p>
-                </td>
-            </tr>
-               <tr>
-                <td>
-                    <van-icon name="friends-o" size="40px"/>
-                    <p>洗护服务</p>
-                </td>
-                <td>
-                    <van-icon name="friends-o" size="40px"/>
-                    <p>生活急救箱</p>
-                </td>
-                <td>
-                    <van-icon name="friends-o" size="40px"/>
-                    <p>洗护</p>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+
         <div>
             <van-tabs v-model="active">
                 <van-tab title="未接订单">
@@ -73,8 +42,8 @@
                     </van-row>
                     <div slot="footer">
                       <van-row v-if="o.status==='待接单'" >  
-                      <van-button type="red" @click="jujue(o.id)">拒绝</van-button>
-                      <van-button type="primary" @click="jieshou(o.id)">接收</van-button>
+                      <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)"  size="small" style="margin-right:3em" @click="jujue(o.id)">拒绝</van-button>
+                      <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)"  size="small" @click="jieshou(o.id)">接收</van-button>
                     </van-row>
                     </div>
                 </van-panel>
